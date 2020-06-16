@@ -4,12 +4,12 @@ function URLS() {
 		return URL;
 	}
 	function User() {
-		const URL = "https://host.hangovergaming.dk/exam/api/info/user";
+		const URL = "https://host.hangovergaming.dk/exam/api/user/user";
 		return URL;
 	}
 
 	function Admin() {
-		const URL = "https://host.hangovergaming.dk/exam/api/info/admin";
+		const URL = "https://host.hangovergaming.dk/exam/api/user/admin";
 		return URL;
 	}
 
@@ -18,15 +18,11 @@ function URLS() {
 		return URL;
 	}
 
-	function Dog() {
-		const URL = "https://host.hangovergaming.dk/exam/api/fetch/dogpic";
-		return URL;
-	}
-	function Cat() {
-		const URL = "https://host.hangovergaming.dk/exam/api/fetch/catpic";
+	function Courses() {
+		const URL = "https://host.hangovergaming.dk/exam/api/course/all";
 		return URL;
 	}
 
-	return { Login, User, Admin, Quote, Dog, Cat };
+	return { Login, User, Admin, Quote, Courses };
 }
 export default new URLS();
